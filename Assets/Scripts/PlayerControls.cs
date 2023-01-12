@@ -14,6 +14,7 @@ public class PlayerControls : MonoBehaviour
     void Start()
     {
         gameController = GetComponent<GameController>();
+        // GameObject.Find("GameController").GetComponent<GameController>().Start();
         Time.timeScale = 1;
         rb = GetComponent<Rigidbody2D>();
         objectHeight = transform.GetComponent<SpriteRenderer>().bounds.size.y / 2;
